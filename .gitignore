@@ -4,6 +4,7 @@
 /.idea/workspace.xml
 .env
 /backend/__pycache__
+/.venv/
 # Editor-based HTTP Client requests
 /httpRequests/
 # Datasource local storage ignored files
