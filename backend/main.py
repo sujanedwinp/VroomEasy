@@ -11,7 +11,9 @@ key = os.environ.get("SUPABASE_ANON_KEY")
 supabase: Client = create_client(url, key)
 
 @app.get("/insurers")
-def get_users():
+def get_insurers():
     res = supabase.table("insurer_info").select("*").execute()
     return res.data
+insurers_data=get_insurers()
 
+print(insurers_data)
