@@ -14,6 +14,4 @@ supabase: Client = create_client(url, key)
 def get_insurers():
     res = supabase.table("insurer_info").select("*").execute()
     return res.data
-insurers_data=get_insurers()
 
-print(insurers_data)
