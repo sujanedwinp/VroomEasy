@@ -20,7 +20,7 @@ def get_insurers():
 
 class PolGen:
 
-    def __init__(self, miIR=150000, maIR=500000, mBT=5000, mCT=5000):
+    def __init__(self, miIR=150000, maIR=500000, mBT=50000, mCT=50000):
         self.minIdvRange=miIR
         self.maxIdvRange=maIR
         self.maxBikeType=mBT
